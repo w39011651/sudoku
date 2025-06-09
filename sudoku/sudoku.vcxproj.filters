@@ -13,5 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{14d23ae7-22b3-43b4-9ab6-1571447e4b13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SudokuGame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constants.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuGame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
