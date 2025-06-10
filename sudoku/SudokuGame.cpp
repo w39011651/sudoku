@@ -128,6 +128,14 @@ void SudokuGame::generatePuzzle(int difficulty)
 bool SudokuGame::isValidMove(int row, int col, int num)
 {
 	//check row
+	if (num == EMPTY_CELL)
+	{
+		if (this->isFixed[row][col])
+			return false;
+		this->board[row][col] = EMPTY_CELL; // Clear the cell if the number is EMPTY_CELL
+		this->holes++;
+		return true;
+	}
 	for (int i = 0; i < SUDOKU_SIZE; ++i)
 	{
 		if ((*this).board[row][i] == num)
@@ -153,7 +161,6 @@ bool SudokuGame::isValidMove(int row, int col, int num)
 
 	// If all checks passed, the move is valid
 	(*this).board[row][col] = num; // Place the number temporarily
-	(*this).isFixed[row][col] = true; // Mark the cell as fixed
 	(*this).holes--; // Decrease the number of holes
 
 	return true;
