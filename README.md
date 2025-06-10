@@ -8,6 +8,10 @@ Environment:
 
 ---
 
+使用 `git clone this-repository.git` 後用Visual studio code打開後，按`Ctrl+Shift+B`編譯
+
+---
+
 # 使用C/C++打造的命令列數獨遊戲
 
 使用 `w`, `a`, `s`, `d`上下左右移動
