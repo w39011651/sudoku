@@ -38,6 +38,7 @@ namespace ui
     // ===== 新增的函式宣告 =====
     void displayMainMenu();
     void displayInstructions();
+    void displaySeed();
     // ===========================
 } // namespace ui
 

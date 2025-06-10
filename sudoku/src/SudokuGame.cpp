@@ -14,7 +14,6 @@ SudokuGame::SudokuGame(int difficulty = 0)
 
 SudokuGame::~SudokuGame()
 {
-	delete this;
 }
 
 void SudokuGame::initializePuzzle()

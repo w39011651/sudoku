@@ -144,6 +144,8 @@ void ui::runGame(SudokuGame& game)
             ui::displayMessage("Congratulations! You have completed the Sudoku puzzle!");
         }
     }
+    std::cout << "Press any key to return to the main menu...";
+    _getch(); // 等待使用者按任意鍵
 }
 
 // 提示使用者選擇難度
@@ -174,7 +176,8 @@ void ui::displayMainMenu()
     std::cout << "               Welcome to Sudoku!\n\n";
     std::cout << "                  1. Start Game\n";
     std::cout << "                  2. How to Play\n";
-    std::cout << "                  3. Exit\n\n";
+    std::cout << "                  3. Get the random seed\n";
+    std::cout << "                  4. Exit\n\n";
     std::cout << "Please select an option:\n> ";
 }
 
@@ -193,4 +196,18 @@ void ui::displayInstructions()
     std::cout << "+---------------------------------------------------+\n\n";
     std::cout << "Press any key to return to the main menu...";
     _getch(); // 等待使用者按任意鍵
+}
+
+void ui::displaySeed()
+{
+	ui::clearScreen();
+	std::cout << "+---------------------------------------------------+\n";
+	std::cout << "|                   Random Seed                     |\n";
+	std::cout << "+---------------------------------------------------+\n\n";
+	std::cout << "The seed of this time game is " + std::to_string(rand()) + ".\n";
+	std::cout << "Please note that this seed is not used in the game, \n";
+	std::cout << "but you can use it to reproduce the same game state if needed.\n\n";
+	std::cout << "+---------------------------------------------------+\n\n";
+	std::cout << "Press any key to return to the main menu...";
+	_getch(); // 等待使用者按任意鍵
 }
