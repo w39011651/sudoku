@@ -1,5 +1,11 @@
 # sudoku
 
+Environment:
+
+- OS: Windows 11
+- Compiler: MSVC
+- IDE: Microsoft Studio 2022
+
 ---
 
 # 使用C/C++打造的命令列數獨遊戲
