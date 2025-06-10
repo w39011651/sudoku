@@ -12,6 +12,7 @@ void ui::clearScreen()
 }
 
 // 顯示歡迎訊息
+
 void ui::displayWelcomeMessage()
 {
 	std::cout << "Welcome to Sudoku!\n";
