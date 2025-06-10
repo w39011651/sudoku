@@ -3,7 +3,7 @@
 Environment:
 
 - OS: Windows 11
-- Compiler: MSVC
+- Compiler: MSVC or g++.exe (MinGW.org GCC-6.3.0-1) 6.3.0 (MinGW 可以使用 tasks.json)
 - IDE: Microsoft Studio 2022
 
 ---
@@ -23,12 +23,14 @@ Environment:
 # 文件結構
 
 ```
+├── .vscode
+     ├── tasks.json //編譯任務設定
 ├── .gitattributes
 ├── .gitignore
 ├── LICENSE.txt
 ├── README.md
 ├── sudoku.sln
-├──sudoku
+├── sudoku
     ├── sudoku.vcxproj // visual studio file
     ├── sudoku.vcxproj.filters //visual studio file
     ├──src
