@@ -10,7 +10,7 @@ class SudokuGame;
 
 namespace ui 
 {
-
+	// ===== 遊戲介面相關函式宣告 =====
     // 清空終端機畫面
     void clearScreen();
 
@@ -32,6 +32,13 @@ namespace ui
 
     // 提示使用者選擇難度
     int promptDifficulty();
+    // ===== 遊戲介面相關函式宣告 =====
+    // 
+    // 
+    // ===== 新增的函式宣告 =====
+    void displayMainMenu();
+    void displayInstructions();
+    // ===========================
 } // namespace ui
 
 #endif

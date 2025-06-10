@@ -159,3 +159,38 @@ int ui::promptDifficulty()
 	}
 	return difficulty;
 }
+
+void ui::displayMainMenu()
+{
+    ui::clearScreen();
+    ui::clearScreen();
+    std::cout << "+---------------------------------------------------+\n";
+    std::cout << "|    SSSS  U   U  DDDD    OOO   K   K   U   U       |\n";
+    std::cout << "|   S      U   U  D   D  O   O  K  K    U   U       |\n";
+    std::cout << "|    SSS   U   U  D   D  O   O  KKK     U   U       |\n";
+    std::cout << "|       S  U   U  D   D  O   O  K  K    U   U       |\n";
+    std::cout << "|   SSSS    UUU   DDDD    OOO   K   K    UUU        |\n";
+    std::cout << "+---------------------------------------------------+\n\n";
+    std::cout << "               Welcome to Sudoku!\n\n";
+    std::cout << "                  1. Start Game\n";
+    std::cout << "                  2. How to Play\n";
+    std::cout << "                  3. Exit\n\n";
+    std::cout << "Please select an option:\n> ";
+}
+
+void ui::displayInstructions()
+{
+    ui::clearScreen();
+    std::cout << "+---------------------------------------------------+\n";
+    std::cout << "|                   How to Play                     |\n";
+    std::cout << "+---------------------------------------------------+\n\n";
+    std::cout << "  - Use 'w', 'a', 's', 'd' keys to move the cursor.\n";
+    std::cout << "    (w: Up, s: Down, a: Left, d: Right)\n\n";
+    std::cout << "  - Press number keys '1' through '9' to fill a cell.\n\n";
+    std::cout << "  - Press '0', 'space', or 'backspace' to clear a cell.\n\n";
+    std::cout << "  - Blue numbers are part of the puzzle and cannot be changed.\n\n";
+    std::cout << "  - Press 'q' while in the game to quit and return to the main menu.\n\n";
+    std::cout << "+---------------------------------------------------+\n\n";
+    std::cout << "Press any key to return to the main menu...";
+    _getch(); // 等待使用者按任意鍵
+}
